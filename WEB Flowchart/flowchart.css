@@ -1,0 +1,31 @@
+div.process{
+    height: auto;
+    width: 200px;
+    transform: skew(-20deg);
+    background-color: blue;
+    overflow: auto;
+}
+
+div.decision{
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: red;
+    position: relative;
+    top: -50px;
+}
+
+div.decision::after{
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: red;
+}
+
+div.arrow-down{
+    
+}
