@@ -1,31 +1,101 @@
-div.process{
-    height: auto;
-    width: 200px;
+.background{
+    background-color: rgb(39, 39, 39);
+    -ms-overflow-style: none;
+}
+
+.background::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.backgroundBox{
+
+    visibility: show;
+    display:inline-block;
+    background-color: black;
+    position: absolute;
+    min-height: 1000px;
+    height: fit-content;
+    max-width: 95%;
+    width:94%;
+    border-radius: 5px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: black;
+}
+
+.Round-box{
+    visibility: show;
+    display: inline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(51, 255, 0);
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}    
+
+.process{
+    visibility: show;
+    text-align: center;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
     transform: skew(-20deg);
     background-color: blue;
     overflow: auto;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-div.decision{
+.decision{
+    visibility: show;
+    display: inline-block;
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-bottom-color: red;
+    border-bottom-color: rgb(255, 251, 0);
     position: relative;
-    top: -50px;
 }
 
-div.decision::after{
-    content: '';
+.decision::after{
+    visibility: show;
     position: absolute;
-    left: -50px;
-    top: 50px;
+    content: '';
+    right: -50%;
     width: 0;
     height: 0;
     border: 50px solid transparent;
-    border-top-color: red;
+    border-top-color: rgb(255, 251, 0);
 }
 
-div.arrow-down{
+.arrow-down{
+    visibility: show;
     
 }
+
+.decisio1{
+    visibility: show;
+    position: relative;
+    background-image: url(Untitled-1.svg);
+    display: inline-block;
+    text-align: center;
+    min-height: 60px;
+    min-width: 6px;
+    background-repeat: repeat;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
